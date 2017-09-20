@@ -10,12 +10,17 @@
       <servlet-name>TestServlet</servlet-name>
       <servlet-class>test.TestServlet</servlet-class>
    </servlet>
+	
+	<servlet>
+      <servlet-name>EchoServlet</servlet-name>
+      <servlet-class>test.EchoServlet</servlet-class>
+   </servlet>
  
    <!-- Note: All <servlet> elements MUST be grouped together and
          placed IN FRONT of the <servlet-mapping> elements -->
  
    <servlet-mapping>
-      <servlet-name>TestServlet</servlet-name>
-      <url-pattern>/hello</url-pattern>
+      <servlet-name>EchoServlet</servlet-name>
+      <url-pattern>/echo</url-pattern>
    </servlet-mapping>
 </web-app>
